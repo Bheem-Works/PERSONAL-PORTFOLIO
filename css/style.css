@@ -80,6 +80,20 @@ footer .social-icons a {
   background-position: center;
   background-image: url("../images/contact-bg.jpeg");
 }
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Allow height to adjust to content */
+    background-attachment: scroll; /* Improves performance on mobile */
+    background-size: cover; /* Ensures the image covers the section */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    background-size: contain; /* For better fit on smaller devices */
+  }
+}
 
 @media screen and (max-width: 990px) {
   #skills .card {
