@@ -80,6 +80,52 @@ footer .social-icons a {
   background-position: center;
   background-image: url("../images/contact-bg.jpeg");
 }
+
+/* .hero {
+  height: 100vh;
+  background-image: url("../images/pankaj.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+} */
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto; /* Adjust height for smaller screens */
+    background-attachment: scroll;
+    padding: 2rem; /* Add padding for smaller devices */
+  }
+
+  .hero h1 {
+    font-size: 1.5rem; /* Adjust heading size for tablets and phones */
+  }
+
+  .hero h2 {
+    font-size: 2rem; /* Adjust subheading size */
+  }
+
+  .hero .btn {
+    font-size: 0.9rem; /* Adjust button text size */
+    padding: 0.75rem 1.5rem; /* Adjust button padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.2rem; /* Smaller font size for phones */
+  }
+
+  .hero h2 {
+    font-size: 1.5rem; /* Reduce size further for small screens */
+  }
+
+  .hero .btn {
+    font-size: 0.8rem; /* Further adjust button size */
+    padding: 0.5rem 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     height: auto; /* Allow height to adjust to content */
@@ -88,12 +134,6 @@ footer .social-icons a {
   }
 }
 
-@media (max-width: 480px) {
-  .hero {
-    height: auto;
-    background-size: contain; /* For better fit on smaller devices */
-  }
-}
 
 @media screen and (max-width: 990px) {
   #skills .card {
